@@ -16,5 +16,4 @@ Navigation – Smooth scrolling and responsive navbar.
 
 Responsive Design – Optimized for desktop and mobile.
 
-Dark mode toggle
 
