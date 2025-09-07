@@ -1,12 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <script src="script.js" defer></script>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Hero</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-inner">
+      <div class="logo" aria-hidden="true">T</div>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li style="display:inline"><a href="#">Home</a></li>
+          <li style="display:inline"><a href="#">About</a></li>
+          <li style="display:inline"><a href="#">Contact us</a></li>
+          <li style="display:inline"><a href="#">Team</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="hero center-wrap" role="main">
+    <div class="left">
+      <h1>Hello,<br><span>I'm Tej</span></h1>
+      <div class="subtitle">Full Stack Developer , UI/UX Designer</div>
+
+      <div class="btns" aria-hidden="false">
+        <a class="btn" href="#contact">Hire me</a>
+        <a class="btn" href="#" download>Download CV</a>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="card" role="img" aria-label="profile illustration">
+        <img src="profile-pic.jpg" alt="a picture of me would have gone here but i have no good ones atp." class="profile-image">
+      </div>
+    </div>
+  </main>
+
+</body>
 </html>
