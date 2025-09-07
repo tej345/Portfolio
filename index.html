@@ -1,11 +1,13 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Portfolio — Hero</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;900&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -13,59 +15,96 @@
 
   <header class="navbar">
     <div class="nav-inner">
-      <div class="logo" aria-hidden="true">T</div>
+      <a href="/" class="logo" aria-label="Homepage">T</a>
       <nav aria-label="Main navigation">
         <ul>
-          <li style="display:inline"><a href="#">Home</a></li>
-          <li style="display:inline"><a href="#">About</a></li>
-          <li style="display:inline"><a href="#">Contact us</a></li>
-          <li style="display:inline"><a href="#">Team</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact-us">Contacts</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="hero center-wrap" role="main">
-    <div class="left">
-      <h1>Hello,<br><span>I'm Tej</span></h1>
-      <div class="subtitle">Full Stack Developer , UI/UX Designer</div>
+  <main>
 
-      <div class="btns" aria-hidden="false">
-        <a class="btn" href="#contact">Hire me</a>
-        <a class="btn" href="#" download>Download CV</a>
+    <section id="home" class="hero">
+      <div class="left">
+        <h1>Hello,<br><span>I'm Tej</span></h1>
+        <p class="subtitle">Full Stack Developer & UI/UX Designer</p>
+        <div class="btns">
+          <a class="btn" href="mailto:youremail@gmail.com?subject=Inquiry from your Website">Hire me</a>
+          <a class="btn" href="assets/CV Resume.pdf" download>Download CV</a>
+        </div>
       </div>
-    </div>
+      <div class="right">
+        <div class="card" role="img" aria-label="Headshot of Tej">
+          <img src="profile-pic.jpg" alt="A professional headshot of Tej." class="profile-image">
+        </div>
+      </div>
+    </section>
 
-    <div class="right">
-      <div class="card" role="img" aria-label="profile illustration">
-        <img src="profile-pic.jpg" alt="a picture of me would have gone here but i have no good ones atp." class="profile-image">
-      </div>
-    </div>
-  </main>
-  <main class="hero center-wrap" role="main">
-  <section class="about">
+    <section id="about" class="about">
       <div class="about-card">
-        <div class="card2" role="img" aria-label="profile illustration">
-        <img src="avatar.jpg" alt="a good pic" class="profile-image">
-      </div>
+        <div class="card" role="img" aria-label="Stylized avatar illustration">
+          <img src="avatar.jpg" alt="A stylized avatar illustration." class="profile-image">
+        </div>
         <div class="about-content">
-          <h2>About me</h2>
-          <h3 class="yellow">Full Stack Developer</h3>
-          <h3 class="yellow">UI/UX Designer</h3>
+          <h2>About Me</h2>
+          <h3 class="yellow">Full Stack Developer & UI/UX Designer</h3>
           <p>
-            Hello! I'm a Full Stack Developer and a UI/UX Designer. 
-          Dive into my portfolio to discover a fusion of elegant 
-          design and seamless development!
+            Hello! I'm Tej, a Web Developer passionate about crafting sleek, responsive, and user-friendly applications. With a strong interest in UI/UX, I love blending clean design with powerful functionality to build digital experiences that are both elegant and impactful!
           </p>
-          <div class="btns" aria-hidden="false">
-        <a class="btn" href="#contact">Hire me</a>
-        <a class="btn" href="#" download>Download CV</a>
-      </div>
+          <div class="btns">
+            <a class="btn" href="mailto:youremail@gmail.com?subject=Inquiry from your Website">Hire Me</a>
+            <a class="btn" href="assets/CV Resume.pdf" download>Download CV</a>
           </div>
         </div>
       </div>
     </section>
-    </main>
+
+    <section id="projects" class="projects-section">
+      <div class="projects-intro">
+          <h2>Projects</h2>
+          <p>These three are my most recent projects.</p>
+      </div>
+      <div class="projects-cards-container">
+        <div class="projects-card">
+            <div class="projects-number">1</div>
+            <h3>To-Do Webpage</h3>
+            <p>An enhanced version of the To-Do List Webpage with elegant design, dark mode toggle and a pomodoro timer</p>
+            <a href=" https://tej345.github.io/GDG_PROJECT/" class="projects-btn">Learn More</a>
+        </div>
+        <div class="projects-card">
+            <div class="projects-number">2</div>
+            <h3>Violent Crimes Prediction Model</h3>
+            <p>This model predicts violent crime rates using demographic & socio-economic features with XGBoost, Random Forest, LightGBM, and ensemble learning.</p>
+            <a href="https://github.com/tej345/Violent-Crimes-Prediction-Model" class="projects-btn">Learn More</a>
+        </div>
+        <div class="projects-card">
+            <div class="projects-number">3</div>
+            <h3>Smart Weather Alert Dashboard</h3>
+            <p>A simple web application that fetches weather details for a city, shows them in a dashboard, and sends basic alerts .(Still under construction)</p>
+            <a href="https://github.com/tej345/Smart-Weather-Alert-Dashboard" class="projects-btn">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-us" class="contact">
+      <div class="contact-intro">
+        <h2>Contact Me</h2>
+        <p>For any queries or project ideas feel free to contact me on any of the platforms below !</p>
+      </div>
+      <div class="social-links">
+        <a href="https://www.instagram.com/tejgandhi_?utm_source=qr&igsh=MWJ1YWt1ZGI4bGVrNQ%3D%3D" class="wrapper"><img src="assets/icons/instagram.png" alt="Instagram"></a>
+        <a href="https://www.github.com/tej345" class="wrapper"><img src="assets/icons/github-mark.svg" alt="GitHub"></a>
+        <a href="https://www.linkedin.com/in/tejg345/" class="wrapper"><img src="assets/icons/linkedin.png" alt="LinkedIn"></a>
+        <a href="mailto:youremail@gmail.com?subject=Inquiry from your Website" class="wrapper"><img src="assets/icons/google.png" alt="Gmail"></a>
+      </div>
+    </section>
+
+  </main>
 
 </body>
 </html>
