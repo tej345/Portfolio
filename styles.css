@@ -233,7 +233,7 @@ nav a {
   margin-top: 40px;
 }
 
-.about-card .card { /* Updated from .card2 for consistency */
+.about-card .card {
   flex:0.6;
   width: 4500px;
   height: 400px;
@@ -242,7 +242,7 @@ nav a {
 /* ===== SERVICES SECTION ===== */
 .projects-section,
 .contact {
-    background-color: var(--orange); /* Or your page's main background color */
+    background-color: var(--orange); 
     padding: 60px 20px;
     display: flex;
     flex-direction: column;
@@ -430,43 +430,43 @@ nav a {
 }
 
 @media (max-width: 768px) {
-    .services-intro h2 {
+    .projects-intro h2 {
         font-size: 2.2rem;
     }
-    .services-intro p {
+    .projects-intro p {
         font-size: 1rem;
     }
-    .services-cards-container {
+    .projects-cards-container {
         flex-direction: column;
         align-items: center;
     }
-    .service-card {
+    .projects-card {
         max-width: 320px; /* Adjust card width for smaller screens */
         min-height: unset; /* Allow height to adjust naturally */
     }
 }
 
 @media (max-width: 480px) {
-    .services-section {
+    .projects-section {
         padding: 40px 15px;
     }
-    .service-card {
+    .projects-card {
         padding: 25px;
     }
-    .service-number {
+    .projects-number {
         width: 45px;
         height: 45px;
         font-size: 1.6rem;
         top: -20px;
     }
-    .service-card h3 {
+    .projects-card h3 {
         font-size: 1.5rem;
         margin-top: 20px;
     }
-    .service-card p {
+    .projects-card p {
         font-size: 0.9rem;
     }
-    .service-btn {
+    .projects-btn {
         padding: 10px 20px;
         font-size: 1rem;
     }
